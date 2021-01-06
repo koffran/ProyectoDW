@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;900&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/pruebacss.css">
+    <title>Games Library</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"> <img src="assets/images/logo.png" /> </a> <!--Logo-->
+        <h1 id="siteName">Games Library</h1>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/headers/tlou2Header3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/headers/horizonHeader.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/headers/hellbladeHeader.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+    </header>      
+
+    <div id="bodyContainer">
+
+        <!--NavBar-->
+        <nav class="bodyContainer__nav">
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="pages/listas.html">Listas</a>  </li>
+                <li> <a href="pages/TheLastOfUs.html">The last of us 2</a> </li>
+                <li> <a href="pages/contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+    
+        <!-- Search box -->
+        <section class="bodyContainer__searchBox">
+            <form action="#" name="busquedaForm" id="formulario1">
+                <div>
+                    <div>
+                        <input type="text" name="searched" id="stringBusqueda" placeholder="Busque por nombre de juego, desarrollador, consola o año"/>
+                    </div>
+                    <div>
+                        <input type="button" value="Buscar"  id="btnBusqueda" />
+                    </div>
+                </div>
+            </form>
+        </section>
+    
+        <h2 class="titulo">Descubre tu proximo juego! </h2>
+        <section id="seccionJuegos">
+             <h3 >Juegos</h3>
+             <div class="juegos container"> 
+                <div class="card juegos__gameCard row">
+                    <img src="assets/images/dishonored.jpg" class="gameCard__gameImg col-md-12"/>
+                    <p class="col-md-12">Dishonored es un videojuego de acción-aventura y sigilo en primera persona desarrollado por Arkane Studios y publicado por Bethesda Softworks.</p>
+  
+                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>  
+                </div>
+                <div class="card juegos__gameCard row" >
+                    <img src="assets/images/carrion.png" class="gameCard__gameImg col-md-12"/>
+                    <p class="col-md-12">Carrion es un videojuego de terror desarrollado por Phobia Game Studio y publicado por Devolver Digital. Descrito como un "juego de horror inverso", el juego permite a los jugadores controlar un monstruo con tentáculos cuyo objetivo es abrirse paso a través de una instalación, acechando y matando humanos a su paso.</p>
+
+                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>     
+                </div>
+                <div class="card  juegos__gameCard row">
+                    <img src="assets/images/tlou2.jpg" class="gameCard__gameImg col-md-12"/>
+                    <p class="col-md-12">Cinco años después de su peligroso viajes a través de unos Estados Unidos devastados, Ellie y Joel se han asentado en Jackson, Wyoming. Vivir en una próspera comunidad de supervivientes les ha otorgado paz y estabilidad a pesar de la amenaza constante que suponen los peligrosos enemigos.</p>  
+                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>
+                </div>
+                <div class="card juegos__gameCard row">
+                    <img src="assets/images/batmanAC.png" class="gameCard__gameImg col-md-12"/>
+                    <p class="col-md-12">Batman: Arkham City es un videojuego de acción y aventura lanzado en el año 2011 desarrollado por Rocksteady Studios. Es la secuela de Batman: Arkham Asylum la cual salió al mercado en el 2009. </p>
+
+                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>  
+                </div>
+                <div class="card juegos__gameCard row">
+                    <img src="assets/images/dmcV.png" class="gameCard__gameImg col-md-12"/>
+                    <p class="col-md-12">Devil May Cry 5 es un videojuego perteneciente al género hack and slash, desarrollado y publicado por la empresa Capcom. Fue lanzado el 8 de marzo de 2019</p>
+      
+                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>
+                </div>
+                <div class="card juegos__gameCard row">
+                    <img src="assets/images/hellblade.png" class="gameCard__gameImg col-md-12"/>
+                    <p class="col-md-12">Hellblade: Senua's Sacrifice es un videojuego de acción-aventura y terror psicológico, desarrollado y publicado por Ninja Theory</p>
+   
+                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>
+                </div>
+
+             </div>
+            
+        </section>
+
+        <footer>
+            <div class="row">
+                <p class="col-md-10">Gracias por organizar tus juegos en Games Library! </p>
+                <div class="col-md-1">
+                    <img /><!--Primer Logo-->
+                    <p>Twitter</p>
+                </div>
+                <div class="col-md-1">
+                    <img/><!--Segundo Logo-->
+                    <p>Linkedin</p>
+                </div>
+
+            </div>
+            
+        </footer>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script>
+        var myCarousel = document.querySelector('#myCarousel')
+        var carousel = new bootstrap.Carousel(myCarousel)
+    </script>
+    
+</body>
+</html>
