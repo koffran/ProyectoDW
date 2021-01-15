@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Videojuegos, juegos, playstation, xbox, nintendo, games, videogames, library, list, organizar"> 
+    <meta name="description" content="Games Library te ofrece la posibilidad de organizar tus juegos para llevar un mejor control de los que ya jugaste y con cuales quieres continuar">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;900&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
@@ -16,7 +17,6 @@
 </head>
 <body>
     <header>
-        <h1>Probando commit</h1>
         <a href="index.html"> <img src="assets/images/logo.png" /> </a> <!--Logo-->
         <h1 id="siteName">Games Library</h1>
 
@@ -50,7 +50,6 @@
     </header>      
 
     <div id="bodyContainer">
-
         <!--NavBar-->
         <nav class="bodyContainer__nav">
             <ul>
@@ -60,61 +59,90 @@
                 <li> <a href="pages/contacto.html">Contacto</a> </li>
             </ul>
         </nav>
-    
+
         <!-- Search box -->
         <section class="bodyContainer__searchBox">
-            <form action="#" name="busquedaForm" id="formulario1">
-                <div>
-                    <div>
+            <form action="#" name="busquedaForm" id="formulario1" class="container">
+                <div class="row">
+                    <div class="col-md-10">
                         <input type="text" name="searched" id="stringBusqueda" placeholder="Busque por nombre de juego, desarrollador, consola o año"/>
                     </div>
-                    <div>
-                        <input type="button" value="Buscar"  id="btnBusqueda" />
+                    <div class="col-md-2">
+                        <input type="button" value="Buscar" class="btn btn-info -block" id="btnBusqueda" />
                     </div>
                 </div>
             </form>
         </section>
     
-        <h2 class="titulo">Descubre tu proximo juego! </h2>
+        <!-- <section class= "randomSelector container"> <Agregar codigo para que al presionar los dados se elija un juego al azar entre los que esten en tu lista de deseados-->
+            <!--div class="row">
+                <h2 class="col-md-12">Descubre tu proximo juego! </h2>
+                <img class= "diceImg col-md-6" src="assets/images/dices.png" alt="Dados">
+                <img class= "col-md-6" src="assets/images/dices.png" alt="Dados">
+            </div>
+        </section> -->
+        
         <section id="seccionJuegos">
-             <h3 >Juegos</h3>
+             <h3 >Juegos</h3> <!--Si borro este h3 rompe todo! -->
              <div class="juegos container"> 
                 <div class="card juegos__gameCard row">
                     <img src="assets/images/dishonored.jpg" class="gameCard__gameImg col-md-12"/>
-                    <p class="col-md-12">Dishonored es un videojuego de acción-aventura y sigilo en primera persona desarrollado por Arkane Studios y publicado por Bethesda Softworks.</p>
-  
-                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>  
+                    <p class="gameTitle">Dishonored</p>
+                    <p class="col-md-12">Arkane Studios</p>
+                    <div class="row">
+                        <button type="button" class="btnAddDeseados btn btn-primary col-md-6">Agregar a lista de deseados</button>  
+                        <button type="button" class="btnAddJugados btn btn-secondary col-md-6">Agregar a lista de jugados</button> 
+                    </div>
+                     
                 </div>
                 <div class="card juegos__gameCard row" >
                     <img src="assets/images/carrion.png" class="gameCard__gameImg col-md-12"/>
-                    <p class="col-md-12">Carrion es un videojuego de terror desarrollado por Phobia Game Studio y publicado por Devolver Digital. Descrito como un "juego de horror inverso", el juego permite a los jugadores controlar un monstruo con tentáculos cuyo objetivo es abrirse paso a través de una instalación, acechando y matando humanos a su paso.</p>
-
-                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>     
+                    <p class="gameTitle">Carrion</p>
+                    <p class="col-md-12">Phobia Game Studio</p>
+                    <div class="row">
+                        <button type="button" class="btnAddDeseados btn btn-primary col-md-6">Agregar a lista de deseados</button>  
+                        <button type="button" class="btnAddJugados btn btn-secondary col-md-6">Agregar a lista de jugados</button> 
+                    </div>   
                 </div>
                 <div class="card  juegos__gameCard row">
                     <img src="assets/images/tlou2.jpg" class="gameCard__gameImg col-md-12"/>
-                    <p class="col-md-12">Cinco años después de su peligroso viajes a través de unos Estados Unidos devastados, Ellie y Joel se han asentado en Jackson, Wyoming. Vivir en una próspera comunidad de supervivientes les ha otorgado paz y estabilidad a pesar de la amenaza constante que suponen los peligrosos enemigos.</p>  
-                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>
+                    <p class="gameTitle">The Last Of Us II</p>
+                    <p class="col-md-12">Naughty Dog</p>  
+                    <div class="row">
+                        <button type="button" class="btnAddDeseados btn btn-primary col-md-6">Agregar a lista de deseados</button>  
+                        <button type="button" class="btnAddJugados btn btn-secondary col-md-6">Agregar a lista de jugados</button> 
+                    </div>
                 </div>
                 <div class="card juegos__gameCard row">
                     <img src="assets/images/batmanAC.png" class="gameCard__gameImg col-md-12"/>
-                    <p class="col-md-12">Batman: Arkham City es un videojuego de acción y aventura lanzado en el año 2011 desarrollado por Rocksteady Studios. Es la secuela de Batman: Arkham Asylum la cual salió al mercado en el 2009. </p>
+                    <p class="gameTitle">Batman Arkham City</p>
+                    <p class="col-md-12">Rocksteady </p>
 
-                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>  
+                    <div class="row">
+                        <button type="button" class="btnAddDeseados btn btn-primary col-md-6">Agregar a lista de deseados</button>  
+                        <button type="button" class="btnAddJugados btn btn-secondary col-md-6">Agregar a lista de jugados</button> 
+                    </div>
                 </div>
                 <div class="card juegos__gameCard row">
                     <img src="assets/images/dmcV.png" class="gameCard__gameImg col-md-12"/>
-                    <p class="col-md-12">Devil May Cry 5 es un videojuego perteneciente al género hack and slash, desarrollado y publicado por la empresa Capcom. Fue lanzado el 8 de marzo de 2019</p>
+                    <p class="gameTitle">Devil May Cry V</p>
+                    <p class="col-md-12">Capcom</p>
       
-                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>
+                    <div class="row">
+                        <button type="button" class="btnAddDeseados btn btn-primary col-md-6">Agregar a lista de deseados</button>  
+                        <button type="button" class="btnAddJugados btn btn-secondary col-md-6">Agregar a lista de jugados</button> 
+                    </div>
                 </div>
                 <div class="card juegos__gameCard row">
                     <img src="assets/images/hellblade.png" class="gameCard__gameImg col-md-12"/>
-                    <p class="col-md-12">Hellblade: Senua's Sacrifice es un videojuego de acción-aventura y terror psicológico, desarrollado y publicado por Ninja Theory</p>
+                    <p class="gameTitle">Hellblade</p>
+                    <p class="col-md-12">Ninja Theory</p>
    
-                    <button type="button" class="btn btn-primary">Agregar a lista de deseados</button>
+                    <div class="row">
+                        <button type="button" class="btnAddDeseados btn btn-primary col-md-6">Agregar a lista de deseados</button>  
+                        <button type="button" class="btnAddJugados btn btn-secondary col-md-6">Agregar a lista de jugados</button> 
+                    </div>
                 </div>
-
              </div>
             
         </section>
